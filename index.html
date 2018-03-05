@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shasan.me</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> 
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/comet-css@1.2.0/dist/comet.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+    <style type="text/css">
+        
+    html, body { height: 100% }
+.card {
+    border-radius: 25px;
+    background: #ABB7B7;
+    box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: #34495e;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+img {
+   border-top-right-radius: 25px;
+   border-top-left-radius: 25px; 
+    -webkit-filter: contrast(1) brightness(1) sepia(0.3) saturate(1.5) hue-rotate(-20deg);
+  filter: contrast(1) brightness(1) sepia(0.3) saturate(1.5) hue-rotate(-20deg);
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background-color: #2c3e50;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+    </style>
+    <script type="text/javascript">
+        //<![CDATA[
+        window.onload=function(){
+        var particles = Particles.init({
+        selector: '.background',
+        color: '#7f8c8d',
+        sizeVariations: 5,
+        connectParticles: true,
+        maxParticles: 130,
+        speed: 0.35,
+        minDistance: 100
+        });
+        }//]]> 
+
+    </script>
+  
+</head>
+<body>
+	<div class="card">
+	  <img src="img/shasan1.jpg" alt="Sahil" style="width:100%" onmouseover="this.src='img/shasan2.jpg';" onmouseout="this.src='img/shasan1.jpg';">
+	  <h1>Sahil Hasan</h1>
+	  <p class="title">B.S. Computer Science</p>
+          <p class="title">EECS, UC Berkeley</p>
+	  <a href="https://github.com/sahilhasan"><i class="fab fa-github-alt fa-fw"></i></a>  
+	  <a href="https://www.linkedin.com/in/sahilhasan"><i class="fab fa-linkedin fa-fw"></i></a> 
+	  <a href="mailto:me@shasan.me"><i class="fas fa-at fa-fw"></i></a> 
+	</div>
+        <canvas class="background"></canvas>
+</body>
+</html>
+
